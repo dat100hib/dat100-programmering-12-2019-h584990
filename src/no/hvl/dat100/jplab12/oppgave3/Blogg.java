@@ -28,17 +28,6 @@ public class Blogg {
 	}
 
 	public int finnInnlegg(Innlegg innlegg) {
-//		boolean funnet = false;
-//		int pos = 0;
-//		while (pos < nesteLedig && !funnet) {
-//			
-//			if (innlegg.getId() == innleggTab[pos].getId()) {
-//				funnet = true;
-//			}
-//			pos++;
-//		}
-//		return pos;
-		
 		for (int i = 0; i < nesteLedig; i++) {
 			if (innlegg.erLik(innleggTab[i])) {
 				return i;
@@ -46,16 +35,6 @@ public class Blogg {
 		}
 		return -1;
 		
-//		int index = -1;
-//		int i = 0;
-//		while (i < nesteLedig && index < 0) {
-//			if (innleggTab[i].erLik(innlegg)) {
-//				index = 1;
-//			} else {
-//				i++;
-//			}
-//		}
-//		return index;
 	}
 
 	public boolean finnes(Innlegg innlegg) {
@@ -73,15 +52,6 @@ public class Blogg {
 
 	public boolean ledigPlass() {
     	boolean ledig = true;
-//		int i = 0;
-//		while (i < innleggTab.length && !ledig) {
-//			if (innleggTab[i] == null) {
-//				ledig = true;
-//			}
-//			i++;
-//		}
-//		return ledig;
-		
 		if(nesteLedig == innleggTab.length) {
 			ledig = false;
 		}

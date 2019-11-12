@@ -11,9 +11,7 @@ public abstract class Innlegg {
 	private int likes;
 	
 	
-	public Innlegg() {
-		
-	}
+	public Innlegg() {};
 	
 	public Innlegg(int id, String bruker, String dato) {
 
